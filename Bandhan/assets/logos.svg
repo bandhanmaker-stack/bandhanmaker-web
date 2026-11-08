@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <defs>
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00e5ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff1493;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffa500;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff6b6b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Main Logo -->
+  <g id="logo">
+    <!-- Background circle -->
+    <circle cx="500" cy="500" r="480" fill="none" stroke="url(#mainGradient)" stroke-width="8" opacity="0.3"/>
+
+    <!-- Stage/Lights representation -->
+    <g>
+      <!-- Left light beam -->
+      <line x1="200" y1="600" x2="400" y2="300" stroke="url(#mainGradient)" stroke-width="12" stroke-linecap="round" opacity="0.8"/>
+
+      <!-- Center vertical beam -->
+      <line x1="500" y1="700" x2="500" y2="200" stroke="url(#goldGradient)" stroke-width="15" stroke-linecap="round" opacity="0.9"/>
+
+      <!-- Right light beam -->
+      <line x1="800" y1="600" x2="600" y2="300" stroke="url(#mainGradient)" stroke-width="12" stroke-linecap="round" opacity="0.8"/>
+    </g>
+
+    <!-- Stage platform -->
+    <rect x="250" y="700" width="500" height="80" fill="url(#mainGradient)" rx="10" opacity="0.6"/>
+    <rect x="270" y="720" width="460" height="40" fill="#0f1419" rx="8"/>
+
+    <!-- Decorative elements -->
+    <circle cx="350" cy="350" r="25" fill="url(#mainGradient)" opacity="0.4"/>
+    <circle cx="650" cy="350" r="25" fill="url(#mainGradient)" opacity="0.4"/>
+    <circle cx="500" cy="250" r="30" fill="url(#goldGradient)" opacity="0.5"/>
+  </g>
+
+  <!-- Text Logo variant (horizontal) -->
+  <g id="text-logo" transform="translate(50, 50)">
+    <text x="0" y="100" font-family="Arial, sans-serif" font-size="80" font-weight="bold" fill="url(#mainGradient)">BANDHANMAKER</text>
+    <text x="0" y="140" font-family="Arial, sans-serif" font-size="30" fill="#a0a8b8" letter-spacing="2">EVENT PRODUCTION</text>
+  </g>
+</svg>

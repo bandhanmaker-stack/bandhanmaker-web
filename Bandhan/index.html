@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandhanmaker - Event Production & Management</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Outfit:wght@400;500;600&display=swap">
+</head>
+<body>
+    <canvas id="laserCanvas"></canvas>
+
+    <div class="content">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Bandhanmaker Logo" class="logo-img">
+                </div>
+                <div class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#contact" class="nav-cta">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Hero Section with Carousel -->
+        <section class="hero">
+            <div class="hero-carousel">
+                <div class="carousel-slide active" style="background-image: url('images/conference.png')"></div>
+                <div class="carousel-slide" style="background-image: url('images/weeding_planner.png')"></div>
+                <div class="carousel-slide" style="background-image: url('images/BTLevent.png')"></div>
+                <div class="carousel-slide" style="background-image: url('images/exhibition.png')"></div>
+                <div class="carousel-slide" style="background-image: url('images/Modern BM Exhibition Booth.png')"></div>
+                <div class="carousel-slide" style="background-image: url('images/indoor_outdoor_event.png')"></div>
+                <div class="carousel-slide" style="background-image: url('images/kidsparty.png')"></div>
+                <div class="carousel-slide" style="background-image: url('images/sound_light.png')"></div>
+                <div class="carousel-slide" style="background-image: url('images/statemanagement.png')"></div>
+                <div class="carousel-slide" style="background-image: url('images/modeling_acting.png')"></div>
+                <div class="carousel-slide" style="background-image: url('images/photoshoot.png')"></div>
+                <div class="carousel-slide" style="background-image: url('images/press_printing.png')"></div>
+
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators">
+                    <span class="indicator active" data-slide="0"></span>
+                    <span class="indicator" data-slide="1"></span>
+                    <span class="indicator" data-slide="2"></span>
+                    <span class="indicator" data-slide="3"></span>
+                    <span class="indicator" data-slide="4"></span>
+                    <span class="indicator" data-slide="5"></span>
+                    <span class="indicator" data-slide="6"></span>
+                    <span class="indicator" data-slide="7"></span>
+                    <span class="indicator" data-slide="8"></span>
+                    <span class="indicator" data-slide="9"></span>
+                    <span class="indicator" data-slide="10"></span>
+                    <span class="indicator" data-slide="11"></span>
+                </div>
+            </div>
+
+            <div class="hero-content">
+                <h1 class="hero-title">We Create <span class="gradient-text">Unforgettable Moments</span></h1>
+                <p class="hero-subtitle">From conferences to weddings, political events to brand activations. Complete event production solutions that bring your vision to life.</p>
+                <div class="hero-buttons">
+                    <a href="services.html" class="btn btn-primary">Explore Services</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Services -->
+        <section class="featured-services">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2>Our Core Services</h2>
+                    <p>Comprehensive event production covering every aspect of your vision</p>
+                </div>
+
+                <div class="services-showcase">
+                    <div class="service-item">
+                        <div class="service-image" style="background-image: url('images/Modern BM Exhibition Booth.png'); background-size: cover; background-position: center;"></div>
+                        <h3>Exhibition</h3>
+                        <p>Immersive exhibition design and cutting-edge display technology</p>
+                        <a href="services.html#exhibition" class="service-link">Learn More →</a>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-image" style="background-image: url('images/conference.png'); background-size: cover; background-position: center;"></div>
+                        <h3>Conference</h3>
+                        <p>End-to-end conference management with AV production and staging</p>
+                        <a href="services.html#conference" class="service-link">Learn More →</a>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-image" style="background-image: url('images/weeding_planner.png'); background-size: cover; background-position: center;"></div>
+                        <h3>Wedding</h3>
+                        <p>Full wedding coordination with creative design direction</p>
+                        <a href="services.html#wedding" class="service-link">Learn More →</a>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-image" style="background-image: url('images/sound_light.png'); background-size: cover; background-position: center;"></div>
+                        <h3>Sound & Light</h3>
+                        <p>Professional audio systems and lighting creating immersive experiences</p>
+                        <a href="services.html#sound-light" class="service-link">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="view-all-services">
+                    <a href="services.html" class="btn btn-primary">View All Services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Preview -->
+        <section class="portfolio-preview">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2>Recent Projects</h2>
+                    <p>Glimpses of the events we've brought to life</p>
+                </div>
+
+                <div class="portfolio-grid">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image" style="background-image: url('images/conference.png'); background-size: cover; background-position: center;"></div>
+                        <div class="portfolio-info">
+                            <h4>Tech Conference 2025</h4>
+                            <p>3000+ attendees</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <div class="portfolio-image" style="background-image: url('images/BTLevent.png'); background-size: cover; background-position: center;"></div>
+                        <div class="portfolio-info">
+                            <h4>Brand Activation</h4>
+                            <p>Interactive Installation</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <div class="portfolio-image" style="background-image: url('images/weeding_planner.png'); background-size: cover; background-position: center;"></div>
+                        <div class="portfolio-info">
+                            <h4>Wedding Reception</h4>
+                            <p>Luxury Celebration</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <div class="portfolio-image" style="background-image: url('images/kidsparty.png'); background-size: cover; background-position: center;"></div>
+                        <div class="portfolio-info">
+                            <h4>Kids Party</h4>
+                            <p>Fun & Entertainment</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="view-portfolio">
+                    <a href="portfolio.html" class="btn btn-primary">View Full Portfolio</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="why-choose-us">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2>Why Choose Bandhanmaker</h2>
+                    <img src="images/logo.png" alt="Bandhanmaker Logo" class="section-logo">
+                    <p>What sets us apart in event production</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 100 100" width="60" height="60">
+                                <circle cx="50" cy="25" r="12" fill="#E60000"/>
+                                <rect x="38" y="40" width="24" height="25" fill="#E60000" rx="3"/>
+                                <circle cx="25" cy="65" r="8" fill="#E60000" opacity="0.8"/>
+                                <rect x="17" y="75" width="16" height="15" fill="#E60000" rx="2" opacity="0.8"/>
+                                <circle cx="75" cy="65" r="8" fill="#E60000" opacity="0.8"/>
+                                <rect x="67" y="75" width="16" height="15" fill="#E60000" rx="2" opacity="0.8"/>
+                            </svg>
+                        </div>
+                        <h3>Expert Team</h3>
+                        <p>100+ experienced professionals across all event production disciplines</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 100 100" width="60" height="60">
+                                <circle cx="50" cy="50" r="12" fill="#E60000"/>
+                                <circle cx="30" cy="30" r="10" fill="#E60000" opacity="0.7"/>
+                                <circle cx="70" cy="30" r="10" fill="#E60000" opacity="0.7"/>
+                                <circle cx="30" cy="70" r="10" fill="#E60000" opacity="0.7"/>
+                                <circle cx="70" cy="70" r="10" fill="#E60000" opacity="0.7"/>
+                                <line x1="50" y1="50" x2="30" y2="30" stroke="#E60000" stroke-width="1.5" opacity="0.5"/>
+                                <line x1="50" y1="50" x2="70" y2="30" stroke="#E60000" stroke-width="1.5" opacity="0.5"/>
+                                <line x1="50" y1="50" x2="30" y2="70" stroke="#E60000" stroke-width="1.5" opacity="0.5"/>
+                                <line x1="50" y1="50" x2="70" y2="70" stroke="#E60000" stroke-width="1.5" opacity="0.5"/>
+                            </svg>
+                        </div>
+                        <h3>Full Service</h3>
+                        <p>From concept to execution, we handle every aspect of your event</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 100 100" width="60" height="60">
+                                <rect x="30" y="25" width="40" height="30" fill="none" stroke="#E60000" stroke-width="2" rx="2"/>
+                                <rect x="40" y="30" width="20" height="20" fill="#E60000" opacity="0.3"/>
+                                <rect x="40" y="55" width="20" height="8" fill="#E60000" rx="1"/>
+                                <line x1="35" y1="63" x2="65" y2="63" stroke="#E60000" stroke-width="2" stroke-linecap="round"/>
+                                <circle cx="25" cy="35" r="3" fill="#E60000"/>
+                                <circle cx="75" cy="35" r="3" fill="#E60000"/>
+                            </svg>
+                        </div>
+                        <h3>Modern Technology</h3>
+                        <p>Latest sound, lighting, and production equipment available</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 100 100" width="60" height="60">
+                                <circle cx="50" cy="50" r="20" fill="none" stroke="#E60000" stroke-width="2"/>
+                                <circle cx="50" cy="32" r="2" fill="#E60000"/>
+                                <circle cx="68" cy="50" r="2" fill="#E60000"/>
+                                <circle cx="50" cy="68" r="2" fill="#E60000"/>
+                                <circle cx="32" cy="50" r="2" fill="#E60000"/>
+                                <line x1="50" y1="50" x2="50" y2="42" stroke="#E60000" stroke-width="2.5" stroke-linecap="round"/>
+                                <line x1="50" y1="50" x2="60" y2="50" stroke="#E60000" stroke-width="2" stroke-linecap="round"/>
+                                <circle cx="50" cy="50" r="2.5" fill="#E60000"/>
+                            </svg>
+                        </div>
+                        <h3>24/7 Support</h3>
+                        <p>Available round-the-clock during event execution</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2>Let's Connect</h2>
+                    <p>Ready to bring your event to life</p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+
+                        <div class="info-item">
+                            <span class="info-label">Email</span>
+                            <span class="info-value">bandhanmaker@gmail.com</span>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-label">Phone</span>
+                            <span class="info-value">+91 82101 28487</span>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-label">Office</span>
+                            <span class="info-value">Patna, Bihar</span>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-label">Hours</span>
+                            <span class="info-value">24/7 Available</span>
+                        </div>
+                    </div>
+
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="fullname">Full Name *</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 82101 28487" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="event">Event Type *</label>
+                            <select id="event" name="event" required>
+                                <option value="">Select Event Type</option>
+                                <option value="Exhibition">Exhibition</option>
+                                <option value="Conference">Conference</option>
+                                <option value="Political Event">Political Event</option>
+                                <option value="Indoor/Outdoor Branding">Indoor/Outdoor Branding</option>
+                                <option value="BTL Event">BTL Event</option>
+                                <option value="Modeling & Acting">Modeling & Acting</option>
+                                <option value="Wedding">Wedding</option>
+                                <option value="Party">Party</option>
+                                <option value="Sound & Light">Sound & Light</option>
+                                <option value="Stage Management">Stage Management</option>
+                                <option value="Photoshoot">Photoshoot</option>
+                                <option value="Press & Printing">Press & Printing</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="location">Event Location *</label>
+                            <input type="text" id="location" name="location" placeholder="City/Venue" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date">Event Date</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us more about your event..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="section-container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h4>Bandhanmaker Event & Entertainment</h4>
+                        <p>OPC Private Limited</p>
+                        <p class="footer-tagline">Creating unforgettable moments through exceptional event production</p>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Contact Information</h4>
+                        <div class="footer-contact">
+                            <p><strong>Location:</strong> Patna, Bihar</p>
+                            <p><strong>Phone:</strong> <a href="tel:+918210128487">+91 82101 28487</a></p>
+                            <p><strong>Email:</strong> <a href="mailto:bandhanmaker@gmail.com">bandhanmaker@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="services.html#exhibition">Exhibition</a></li>
+                            <li><a href="services.html#conference">Conference</a></li>
+                            <li><a href="services.html#wedding">Wedding</a></li>
+                            <li><a href="services.html#sound-light">Sound & Light</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/bandhanmakerevent/" target="_blank" rel="noopener noreferrer" class="social-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Bandhanmaker Event & Entertainment OPC Private Limited. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/laser-background.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/form-handler.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/google-sheets-integration.js"></script>
+</body>
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Bandhanmaker</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Outfit:wght@400;500;600&display=swap">
+</head>
+<body>
+    <canvas id="laserCanvas"></canvas>
+
+    <div class="content">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Bandhanmaker Logo" class="logo-img">
+                    <span class="logo-text">BANDHANMAKER</span>
+                </div>
+                <div class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero portfolio-hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Our <span class="gradient-text">Portfolio</span></h1>
+                <p class="hero-subtitle">Showcasing memorable events we've created across India</p>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio-section">
+            <div class="section-container">
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="conference">Conference</button>
+                    <button class="filter-btn" data-filter="wedding">Wedding</button>
+                    <button class="filter-btn" data-filter="corporate">Corporate</button>
+                    <button class="filter-btn" data-filter="exhibition">Exhibition</button>
+                </div>
+
+                <div class="portfolio-grid-full">
+                    <!-- Portfolio Item 1 -->
+                    <div class="portfolio-item-full" data-category="conference">
+                        <div class="portfolio-visual" style="background-image: url('images/conference.png'); background-size: cover; background-position: center;"></div>
+                        <div class="portfolio-details">
+                            <h3>Tech Conference 2025</h3>
+                            <p class="category">Conference</p>
+                            <p class="description">A landmark tech conference featuring 50+ speakers and 3000+ international attendees. Complete AV production, live streaming, and interactive networking areas.</p>
+                            <div class="project-stats">
+                                <span>Mumbai</span>
+                                <span>3000+ attendees</span>
+                                <span>50+ speakers</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 2 -->
+                    <div class="portfolio-item-full" data-category="wedding">
+                        <div class="portfolio-visual" style="background-image: url('images/weeding_planner.png'); background-size: cover; background-position: center;"></div>
+                        <div class="portfolio-details">
+                            <h3>Grand Wedding Reception</h3>
+                            <p class="category">Wedding</p>
+                            <p class="description">Luxurious wedding reception with custom decorations, live band, DJ, and choreographed performances. Venue transformation with full lighting design and photography coverage.</p>
+                            <div class="project-stats">
+                                <span>Delhi</span>
+                                <span>800 guests</span>
+                                <span>3-day event</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 3 -->
+                    <div class="portfolio-item-full" data-category="corporate">
+                        <div class="portfolio-visual" style="background-image: url('images/BTLevent.png'); background-size: cover; background-position: center;"></div>
+                        <div class="portfolio-details">
+                            <h3>Brand Activation</h3>
+                            <p class="category">Corporate</p>
+                            <p class="description">Interactive brand activation featuring experiential installations, product sampling, and consumer engagement. Multi-city roadshow with 10,000+ direct interactions.</p>
+                            <div class="project-stats">
+                                <span>Pan-India</span>
+                                <span>10000+ reach</span>
+                                <span>5 cities</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 4 -->
+                    <div class="portfolio-item-full" data-category="exhibition">
+                        <div class="portfolio-visual" style="background-image: url('images/Modern BM Exhibition Booth.png'); background-size: cover; background-position: center;"></div>
+                        <div class="portfolio-details">
+                            <h3>International Exhibition</h3>
+                            <p class="category">Exhibition</p>
+                            <p class="description">Large-scale international exhibition with custom booth designs, digital installations, and immersive experiences. Managed 200+ exhibitors and 15,000 visitors.</p>
+                            <div class="project-stats">
+                                <span>Bangalore</span>
+                                <span>15000 visitors</span>
+                                <span>200+ exhibitors</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 5 -->
+                    <div class="portfolio-item-full" data-category="conference">
+                        <div class="portfolio-visual" style="background-image: url('images/exhibition.png'); background-size: cover; background-position: center;"></div>
+                        <div class="portfolio-details">
+                            <h3>Annual Summit 2024</h3>
+                            <p class="category">Conference</p>
+                            <p class="description">Industry summit with keynote speakers, panel discussions, and networking sessions. Professional AV setup, concurrent breakout sessions, and live social media coverage.</p>
+                            <div class="project-stats">
+                                <span>Hyderabad</span>
+                                <span>2000 attendees</span>
+                                <span>Live streamed</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 6 -->
+                    <div class="portfolio-item-full" data-category="corporate">
+                        <div class="portfolio-visual" style="background-image: url('images/indoor_outdoor_event.png'); background-size: cover; background-position: center;"></div>
+                        <div class="portfolio-details">
+                            <h3>Corporate Gala Dinner</h3>
+                            <p class="category">Corporate</p>
+                            <p class="description">Elegant corporate gala with themed decorations, multi-course dinner, live entertainment, and awards ceremony. Complete event management and professional documentation.</p>
+                            <div class="project-stats">
+                                <span>Pune</span>
+                                <span>500 guests</span>
+                                <span>Premium service</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 7 -->
+                    <div class="portfolio-item-full" data-category="wedding">
+                        <div class="portfolio-visual" style="background-image: url('images/sound_light.png'); background-size: cover; background-position: center;"></div>
+                        <div class="portfolio-details">
+                            <h3>Destination Wedding</h3>
+                            <p class="category">Wedding</p>
+                            <p class="description">Multi-day destination wedding with pre-wedding events, venue coordination, guest accommodation liaison, and complete wedding ceremony management.</p>
+                            <div class="project-stats">
+                                <span>Goa</span>
+                                <span>600 guests</span>
+                                <span>Professional coverage</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 8 -->
+                    <div class="portfolio-item-full" data-category="exhibition">
+                        <div class="portfolio-visual" style="background-image: url('images/photoshoot.png'); background-size: cover; background-position: center;"></div>
+                        <div class="portfolio-details">
+                            <h3>Art & Design Exhibition</h3>
+                            <p class="category">Exhibition</p>
+                            <p class="description">Contemporary art exhibition featuring 100+ artworks, interactive installations, and artist talks. Professional gallery setup, curated experience, and opening night gala.</p>
+                            <div class="project-stats">
+                                <span>Delhi</span>
+                                <span>100+ artworks</span>
+                                <span>30 days</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 9 -->
+                    <div class="portfolio-item-full" data-category="conference">
+                        <div class="portfolio-visual" style="background-image: url('images/kidsparty.png'); background-size: cover; background-position: center;"></div>
+                        <div class="portfolio-details">
+                            <h3>Music Festival 2024</h3>
+                            <p class="category">Conference</p>
+                            <p class="description">Multi-day music festival featuring international and domestic artists, professional sound and lighting, crowd management, and security coordination for 5,000+ attendees.</p>
+                            <div class="project-stats">
+                                <span>Kolkata</span>
+                                <span>20+ artists</span>
+                                <span>5000+ crowd</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="portfolio-stats">
+            <div class="section-container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Events Successfully Executed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">50K+</div>
+                        <div class="stat-label">Total Attendees Managed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Dedicated Team Members</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Years of Experience</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="section-container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h4>Bandhanmaker Event & Entertainment</h4>
+                        <p>OPC Private Limited</p>
+                        <p class="footer-tagline">Creating unforgettable moments through exceptional event production</p>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Contact Information</h4>
+                        <div class="footer-contact">
+                            <p><strong>Location:</strong> Patna, Bihar</p>
+                            <p><strong>Phone:</strong> <a href="tel:+918210128487">+91 82101 28487</a></p>
+                            <p><strong>Email:</strong> <a href="mailto:bandhanmaker@gmail.com">bandhanmaker@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="services.html#exhibition">Exhibition</a></li>
+                            <li><a href="services.html#conference">Conference</a></li>
+                            <li><a href="services.html#wedding">Wedding</a></li>
+                            <li><a href="services.html#sound-light">Sound & Light</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/bandhanmakerevent/" target="_blank" rel="noopener noreferrer" class="social-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Bandhanmaker Event & Entertainment OPC Private Limited. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <style>
+        .portfolio-section {
+            padding: 6rem 2rem;
+        }
+
+        .portfolio-filters {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.75rem 1.5rem;
+            background: var(--bg-secondary);
+            border: 2px solid var(--border-color);
+            color: var(--text-primary);
+            border-radius: 0.5rem;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-family: "Outfit", sans-serif;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            border-color: var(--accent-cyan);
+            color: var(--accent-cyan);
+            background: rgba(0, 229, 255, 0.1);
+        }
+
+        .portfolio-grid-full {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .portfolio-item-full {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 0.75rem;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .portfolio-item-full:hover {
+            border-color: var(--accent-cyan);
+            transform: translateY(-4px);
+            box-shadow: 0 0 30px rgba(0, 229, 255, 0.2);
+        }
+
+        .portfolio-visual {
+            width: 100%;
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item-full:hover .portfolio-visual {
+            transform: scale(1.05);
+        }
+
+        .portfolio-details {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .portfolio-details h3 {
+            font-family: "Poppins", sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .portfolio-details .category {
+            color: var(--accent-cyan);
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.75rem;
+        }
+
+        .portfolio-details .description {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            flex-grow: 1;
+        }
+
+        .project-stats {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .portfolio-stats {
+            padding: 4rem 2rem;
+            background: linear-gradient(180deg, rgba(0, 229, 255, 0.05) 0%, transparent 100%);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 2rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 0.75rem;
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            border-color: var(--accent-cyan);
+            transform: translateY(-4px);
+        }
+
+        .stat-number {
+            font-family: "Poppins", sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-cyan);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .portfolio-section {
+                padding: 4rem 1rem;
+            }
+
+            .portfolio-grid-full {
+                grid-template-columns: 1fr;
+            }
+
+            .portfolio-filters {
+                gap: 0.5rem;
+                font-size: 0.9rem;
+            }
+
+            .filter-btn {
+                padding: 0.5rem 1rem;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+
+    <script src="js/laser-background.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/animations.js"></script>
+    <script>
+        // Portfolio filter functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item-full');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                // Filter items
+                portfolioItems.forEach(item => {
+                    const category = item.getAttribute('data-category');
+                    if (filterValue === 'all' || category === filterValue) {
+                        item.style.display = 'flex';
+                        item.classList.add('scroll-reveal');
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
